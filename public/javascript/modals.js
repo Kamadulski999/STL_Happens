@@ -27,5 +27,3 @@ document.querySelector('#login').addEventListener('click',loginModalActive);
 document.querySelector('#sign-up').addEventListener('click',signUpModalActive);
 document.querySelector('#close-sign-up').addEventListener('click',signUpModalClose);
 document.querySelector('#close-login').addEventListener('click',loginModalClose);
-// document.querySelector('#login-complete').addEventListener('click', loginModalClose);
-// document.querySelector("#sign-up-complete").addEventListener('click', signUpModalClose);
