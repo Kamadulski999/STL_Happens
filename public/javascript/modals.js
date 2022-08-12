@@ -23,7 +23,7 @@ const signUpModal = document.querySelector('#sign-up-modal');
   }
 
 
-// document.querySelector('#login').addEventListener('click',loginModalActive);
-// document.querySelector('#sign-up').addEventListener('click',signUpModalActive);
-// document.querySelector('#close-sign-up').addEventListener('click',signUpModalClose);
-// document.querySelector('#close-login').addEventListener('click',loginModalClose);
+document.querySelector('#login').addEventListener('click',loginModalActive);
+document.querySelector('#sign-up').addEventListener('click',signUpModalActive);
+document.querySelector('#close-sign-up').addEventListener('click',signUpModalClose);
+document.querySelector('#close-login').addEventListener('click',loginModalClose);
