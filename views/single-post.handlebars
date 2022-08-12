@@ -1,0 +1,26 @@
+{{> post-info post}}
+  <ol>
+    <li>
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{post.post_url}}" class="edit-link">Edit post</a>
+    </li>
+  </ol>
+{{#if loggedIn}}
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+    <input type="hidden" id="post_id" name="post_id" value="{{ post.id }}" />
+  <div>
+    <button type="submit">add comment</button>
+  </div>
+</form>
+{{/if}}
+
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
+{{/if}}
