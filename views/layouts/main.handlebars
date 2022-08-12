@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STL Happens</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>
+        <a href="/">STL Happens</a>
+      </h1>
+      <nav>
+        {{#if loggedIn}}
+        <button id="make-post" class="btn">make post</button>
+        <button id="logout" class="btn">logout</button>
+        {{else}}
+        <button id="login" class="btn">login</button>
+        <button id="sign-up" class="btn">sign up</button>
+
+        {{/if}}
+      </nav>
+    </header>
+    <main>
+        <body>
+            <!-- TAG SEARCH BUTTONS -->
+            <div id="tag-btns">
+                <button id="food-tag-btn" class="btn">Food and Beverage</button>
+                <button id="sports-tag-btn" class="btn">Sports</button>
+                <button id="arts-tag-btn" class="btn">Music and Entertainment</button>
+                <button id="edu-tag-btn" class="btn">Museums and Education</button>
+                <button id="free-tag-btn" class="btn">Free!</button>
+            </div>
+            <!-- WEATHER FORECAST --> 
+            <div id="weather-forecast">
+                <h2 id="five-forecast"></h2>
+                <div id="five-days"></div>
+            </div>
+            <!-- POSTS -->
+            <div>{{> post-info}}  </div>
+
+            {{#if loggedIn}}
+            
+            {{/if}}
+          
+        </body>
+      
+    </main>
+    <footer>
+      Thanks for visiting!
+    </footer>
+  </div>
+  
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+   <script src="/javascript/make-post.js"></script>
+  {{/if}}
+</body>
+
+</html>
