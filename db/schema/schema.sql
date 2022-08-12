@@ -1,1 +1,4 @@
-  
+  DROP DATABASE IF EXISTS STL_Happens;
+
+  CREATE DATABASE STL_Happens;
+
