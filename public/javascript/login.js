@@ -1,3 +1,7 @@
+const loginBtn = document.querySelector('#login');
+const signupBtn = document.querySelector('#sign-up');
+
+
 async function signupFormHandler(event) {
     event.preventDefault();
   
@@ -47,6 +51,8 @@ async function signupFormHandler(event) {
       }
     }
   } 
+
+
   
   document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
   document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
