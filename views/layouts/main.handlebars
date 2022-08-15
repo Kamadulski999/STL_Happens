@@ -48,11 +48,16 @@
       Thanks for visiting!
     </footer>
   </div>
-  <script src="/javascript/modals.js"></script>
+
+ 
   <script src="/javascript/login.js"></script>
+    
+
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
-   <script src="/javascript/make-post.js"></script>
+  <script src="/javascript/make-post.js"></script>
+  {{ else }}
+  <script src="/javascript/modals.js"></script>
   {{/if}}
 </body>
 </html>
