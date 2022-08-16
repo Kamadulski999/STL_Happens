@@ -39,9 +39,6 @@ var getFiveDayWeather = function(lat, lon) {
 };
 
 var printFiveDay = function(fiveDayArr) {
-    var fiveDayTitleEl = document.querySelector("#five-forecast");
-    fiveDayTitleEl.textContent = "Five Day Forecast: "
-
     var fiveDayContainerEl = document.querySelector("#five-days");
     fiveDayContainerEl.innerHTML = "";
     
@@ -50,6 +47,7 @@ var printFiveDay = function(fiveDayArr) {
        
         var oneDayContainerEl = document.createElement("div");
         oneDayContainerEl.classList.add("one-day-container");
+        oneDayContainerEl.classList.add("card");
         fiveDayContainerEl.appendChild(oneDayContainerEl);
 
         var oneDayDateEl = document.createElement("h2");
@@ -58,7 +56,7 @@ var printFiveDay = function(fiveDayArr) {
         oneDayContainerEl.appendChild(oneDayDateEl);
 
         var oneDayIconEl = document.createElement("img");
-        oneDayIconEl.classList.add("icon");
+        oneDayIconEl.classList.add("weather-icon");
         oneDayContainerEl.appendChild(oneDayIconEl);
 
 

@@ -1,0 +1,153 @@
+* { 
+    --color-one: #FFFFFF;
+    --color-two: #B72126;
+    --color-three: #14264B;
+    --color-four: #FEE60E;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--color-one);
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #333;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-one);
+    font-weight: bold;
+    transition: color .1s;
+}
+
+a:hover {
+    color: var(--color-two);
+}
+
+button {
+    background-color: var(--color-one);
+    border: 0;
+    padding: 1%;
+    color: var(--color-three);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+button:hover {
+    background-color: var(--color-four);
+    color: var(--color-three);
+}
+
+.post-list {
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    min-width: 40%;
+    min-height: 100px;
+}  
+
+textarea, input {
+    padding: .5%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+  
+  textarea:focus, input:focus {
+    outline: none;
+    border: 1px solid #3486eb;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    /* padding: 5px 5px 5px 20px; */
+    font-weight: bolder;
+    color: var(--color-one);
+    background-color: var(--color-three);
+    z-index: 9999;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    min-width: 100vw;
+
+}
+
+.delete-post-btn {
+    background-color: #d41414;
+}
+  
+.delete-post-btn:hover {
+    background-color: #ff643d;
+}
+  
+.post {
+    margin-bottom: 2%;
+    line-height: 150%;
+}
+
+.tag-btn{
+    padding: 5px;
+    margin: 5px;
+}
+  
+main {
+    flex: 1;
+    padding: 2% 4%;
+}
+
+#five-days{
+    display: flex;
+    justify-content: center;
+    align-content: space-around center;
+}
+
+#weather-forecast{
+    background-color: var(--color-two);
+    border-radius: 5px;
+}
+
+#tag-btns{
+    background-color: var(--color-two);
+    color: var(--color-one);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.card {
+    height: 150px;
+    width: 125px;
+    background-color: var(--color-two);
+    color: var(--color-one);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weather-icon {
+    height: 60px;
+    width: 60px;
+}
+
+#forecast {
+    text-align: center;
+}
