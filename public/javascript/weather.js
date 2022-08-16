@@ -1,3 +1,5 @@
+const dayjs = require('dayjs');
+
 var date = dayjs().format("MM/DD/YYYY");
 var apiUrl = "https://api.openweathermap.org/data/2.5/onecall?lat=38.6&lon=-90.2&exclude=minutely,hourly,alerts&units=imperial&appid=a74391bcfbdf1e9827d65a7e2e76f024";
 
@@ -96,3 +98,5 @@ var printFiveDay = function(fiveDayArr) {
         oneDayContainerEl.appendChild(oneDayHumidityEl);
     };
 };
+
+getFiveDayWeather();
