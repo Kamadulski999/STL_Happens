@@ -9,23 +9,32 @@
 </head>
 <body>
   <div class="wrapper">
-    <header>
-      <h1>
+    <header class="navbar is-white">
+      <h1 class="navbar-brand navbar-item">
         <a href="/">STL Happens</a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </h1>
-      <nav>
+      <nav class="navbar-menu">
         {{#if loggedIn}}
-        <button id="make-post" class="btn">make post</button>
-        <button id="logout" class="btn">logout</button>
+        <div class="navbar-end">
+        <button id="make-post" class="btn navbar-item">make post</button>
+        <button id="logout" class="btn navbar-item">logout</button>
+        </div>
         {{else}}
-        <button id="login" class="btn">login</button>
-        <button id="sign-up" class="btn">sign up</button>
+        <div class="navbar-end">
+        <button id="login" class="btn navbar-item">login</button>
+        <button id="sign-up" class="btn navbar-item">sign up</button>
+        </div>
         {{/if}}
       </nav>
     </header>
     <main class="columns">
             <!-- TAG SEARCH BUTTONS -->
-            <div id="tag-btns" class="column">
+            <div id="tag-btns" class="column is-one-quarter">
               <h2>Show me posts with this tag:</h2>
                 <button id="food-tag-btn" class="tag-btn btn">Food and Beverage</button>
                 <button id="sports-tag-btn" class="tag-btn btn">Sports</button>
