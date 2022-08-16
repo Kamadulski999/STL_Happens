@@ -1,8 +1,7 @@
 // const dayjs = require('dayjs');
 
 // var date = dayjs().format("MM/DD/YYYY");
-// var apiUrl = "https://api.openweathermap.org/data/2.5/onecall?lat=38.6&lon=-90.2&exclude=minutely,hourly,alerts&units=imperial&appid=a74391bcfbdf1e9827d65a7e2e76f024";
-const apiUrl = "api.openweathermap.org/data/2.5/forecast/daily?lat=38.6&lon=-90.2&cnt=5&appid=a74391bcfbdf1e9827d65a7e2e76f024";
+const apiUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=38.6&lon=-90.2&units=imperial&appid=a74391bcfbdf1e9827d65a7e2e76f024";
 
 
 var getFiveDayWeather = function(lat, lon) {
@@ -11,27 +10,28 @@ var getFiveDayWeather = function(lat, lon) {
         .then(function(response) {
             response.json().then(function(data) {
             var weather = data;
+            console.log(weather);
             var fiveDayArr = [];
         //storing weather data from api
-    //     for (var i = 0; i < 5; i++) {
-    //         date = dayjs().add(i + 1, 'day').format("MM/DD/YYYY");
-    //         var fiveDayObj = {
-    //             date: date,
-    //             weather: weather.daily[i].weather[0].icon,
-    //             temp: weather.daily[i].temp.day,
-    //             wind: weather.daily[i].wind_speed,
-    //             humidity: weather.daily[i].humidity
-    //         };
+        for (var i = 0; i < 5; i++) {
+            // date = dayjs().add(i + 1, 'day').format("MM/DD/YYYY");
+            var fiveDayObj = {
+                // date: date,
+                weather: weather.list[i].weather[0].icon,
+                temp: weather.list[i].main.temp,
+                wind: weather.list[i].wind.speed,
+                humidity: weather.list[i].main.humidity
+            };
 
-    //         fiveDayArr.push(fiveDayObj);
-    //     };
-    //     // console.log(fiveDayArr);
+            fiveDayArr.push(fiveDayObj);
+        };
+        console.log(fiveDayArr);
        
 
-    //     //sending stored data to function that will print to screen
-    //     printFiveDay(fiveDayArr);
-    //     });
-    // })
+        //sending stored data to function that will print to screen
+        printFiveDay(fiveDayArr);
+         });
+     })
 
     .catch(function(error) {
         alert("Unable to connect to Weather Map");
@@ -65,23 +65,23 @@ var printFiveDay = function(fiveDayArr) {
         //adding corresponding weather icon
         var icon = fiveDayArr[i].weather;
         if (icon === "01d"|| icon === "01n") {
-                oneDayIconEl.setAttribute("src", "./assets/images/01d.png")
+                oneDayIconEl.setAttribute("src", "./images/01d.png")
             } else if (icon === "02d"|| icon === "02n") {
-                oneDayIconEl.setAttribute("src", "./assets/images/02d.png");
+                oneDayIconEl.setAttribute("src", "./images/02d.png");
             } else if (icon === "03d"|| icon === "03n") {
-                oneDayIconEl.setAttribute("src", "./assets/images/03d.png");
+                oneDayIconEl.setAttribute("src", "./images/03d.png");
             } else if (icon = "04d" || icon === "04n") {
-                oneDayIconEl.setAttribute("src", "./assets/images/04d.png");
+                oneDayIconEl.setAttribute("src", "./images/04d.png");
             } else if (icon = "09d" || icon === "05n") {
-                oneDayIconEl.setAttribute("src", "./assets/images/09d.png");
+                oneDayIconEl.setAttribute("src", "./images/09d.png");
             } else if (icon = "10d" || icon === "10n") {
-                oneDayIconEl.setAttribute("src", "./assets/images/10d.png");
+                oneDayIconEl.setAttribute("src", "./images/10d.png");
             } else if (icon = "11d" || icon === "11n") {
-                oneDayIconEl.setAttribute("src", "./assets/images/11d.png");
+                oneDayIconEl.setAttribute("src", "./images/11d.png");
             } else if (icon = "13d" || icon === "13n") {
-                oneDayIconEl.setAttribute("src", "./assets/images/13d.png");
+                oneDayIconEl.setAttribute("src", "./images/13d.png");
             } else if (icon = "50d" || icon === "50n") {
-                oneDayIconEl.setAttribute("src", "./assets/images/50d.png");
+                oneDayIconEl.setAttribute("src", "./images/50d.png");
             } else {
                 oneDayIconEl.setAttribute("src", "");
             };
