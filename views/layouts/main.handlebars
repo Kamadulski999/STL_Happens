@@ -12,22 +12,31 @@
     <header class="navbar is-white">
       <h1 class="navbar-brand navbar-item">
         <a href="/">STL Happens</a>
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <a role="button" id="navBurger" class="navbar-burger" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </h1>
-      <nav class="navbar-menu">
+      <nav id="navMenu" class="navbar-menu">
         {{#if loggedIn}}
+        <div class="navbar-start"></div>
         <div class="navbar-end">
-        <button id="make-post" class="btn navbar-item">make post</button>
-        <button id="logout" class="btn navbar-item">logout</button>
-        </div>
+          <div class="navbar-end">
+            <button id="make-post" class="btn navbar-item">make post</button>
+          </div>
+          <div class="navbar-item">
+            <button id="logout" class="btn navbar-item">logout</button>
+          </div>
         {{else}}
+        <div class="navbar-start"></div>
         <div class="navbar-end">
-        <button id="login" class="btn navbar-item">login</button>
-        <button id="sign-up" class="btn navbar-item">sign up</button>
+          <div class="navbar-item">
+            <button id="login" class="btn navbar-item">login</button>
+          </div>
+          <div class="navbar-item">
+            <button id="sign-up" class="btn navbar-item">sign up</button>
+          </div>
         </div>
         {{/if}}
       </nav>
@@ -62,6 +71,7 @@
  
   <script src="/javascript/login.js"></script>
   <script src="/javascript/weather.js"></script>
+  <script src="/javascript/navbar.js"></script>
     
 
   {{#if loggedIn}}
