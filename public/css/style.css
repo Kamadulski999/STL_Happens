@@ -36,6 +36,7 @@ button {
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
+    display: flex;
 }
   
 button:hover {
@@ -153,4 +154,12 @@ main {
 
 #forecast {
     text-align: center;
+}
+
+footer{
+    background-color: var(--color-one);
+    color: var(--color-three);
+    padding: 5px;
+    font-weight: bold;
+
 }

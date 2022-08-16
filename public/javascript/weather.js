@@ -1,6 +1,4 @@
-// const dayjs = require('dayjs');
-
-// var date = dayjs().format("MM/DD/YYYY");
+var date = dayjs().format("MM/DD/YYYY");
 const apiUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=38.6&lon=-90.2&units=imperial&appid=a74391bcfbdf1e9827d65a7e2e76f024";
 
 
@@ -10,13 +8,13 @@ var getFiveDayWeather = function(lat, lon) {
         .then(function(response) {
             response.json().then(function(data) {
             var weather = data;
-            console.log(weather);
+            // console.log(weather);
             var fiveDayArr = [];
         //storing weather data from api
         for (var i = 0; i < 5; i++) {
-            // date = dayjs().add(i + 1, 'day').format("MM/DD/YYYY");
+            date = dayjs().add(i + 1, 'day').format("MM/DD/YYYY");
             var fiveDayObj = {
-                // date: date,
+                date: date,
                 weather: weather.list[i].weather[0].icon,
                 temp: weather.list[i].main.temp,
                 wind: weather.list[i].wind.speed,
@@ -25,7 +23,7 @@ var getFiveDayWeather = function(lat, lon) {
 
             fiveDayArr.push(fiveDayObj);
         };
-        console.log(fiveDayArr);
+        // console.log(fiveDayArr);
        
 
         //sending stored data to function that will print to screen
