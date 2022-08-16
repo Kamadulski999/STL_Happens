@@ -3,7 +3,7 @@
     --color-two: #B72126;
     --color-three: #14264B;
     --color-four: #FEE60E;
-    box-sizing: border-box;
+    --box-sizing: border-box;
 }
 
 body, html {
@@ -20,12 +20,12 @@ body, html {
 
 a {
     text-decoration: none;
-    color: var(--color-three);
+    color: var(--color-one);
     font-weight: bold;
 }
 
 a:hover {
-    color: var(--color-two);
+    color: var(--color-four);
 }
 
 button {
@@ -68,7 +68,7 @@ textarea, input {
 .wrapper {
     width: 100%;
     min-height: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
