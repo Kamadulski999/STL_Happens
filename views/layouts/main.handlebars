@@ -23,9 +23,9 @@
         {{/if}}
       </nav>
     </header>
-    <main>
+    <main class="columns">
             <!-- TAG SEARCH BUTTONS -->
-            <div id="tag-btns" class="">
+            <div id="tag-btns" class="column">
                 <button id="food-tag-btn" class="btn">Food and Beverage</button>
                 <button id="sports-tag-btn" class="btn">Sports</button>
                 <button id="arts-tag-btn" class="btn">Music and Entertainment</button>
@@ -33,12 +33,14 @@
                 <button id="free-tag-btn" class="btn">Free!</button>
             </div>
             <!-- WEATHER FORECAST -->
+            <div class="column">
             <div id="weather-forecast">
                 <h2 id="five-forecast"></h2>
                 <div id="five-days"></div>
             </div>
         
             {{{ body }}}
+            </div>
             {{> login-modal}}
             {{> sign-up-modal}}
     </main>

@@ -1,7 +1,9 @@
-const dayjs = require('dayjs');
+// const dayjs = require('dayjs');
 
-var date = dayjs().format("MM/DD/YYYY");
-var apiUrl = "https://api.openweathermap.org/data/2.5/onecall?lat=38.6&lon=-90.2&exclude=minutely,hourly,alerts&units=imperial&appid=a74391bcfbdf1e9827d65a7e2e76f024";
+// var date = dayjs().format("MM/DD/YYYY");
+// var apiUrl = "https://api.openweathermap.org/data/2.5/onecall?lat=38.6&lon=-90.2&exclude=minutely,hourly,alerts&units=imperial&appid=a74391bcfbdf1e9827d65a7e2e76f024";
+const apiUrl = "api.openweathermap.org/data/2.5/forecast/daily?lat=38.6&lon=-90.2&cnt=5&appid=a74391bcfbdf1e9827d65a7e2e76f024";
+
 
 var getFiveDayWeather = function(lat, lon) {
     fetch(apiUrl)
@@ -11,25 +13,25 @@ var getFiveDayWeather = function(lat, lon) {
             var weather = data;
             var fiveDayArr = [];
         //storing weather data from api
-        for (var i = 0; i < 5; i++) {
-            date = dayjs().add(i + 1, 'day').format("MM/DD/YYYY");
-            var fiveDayObj = {
-                date: date,
-                weather: weather.daily[i].weather[0].icon,
-                temp: weather.daily[i].temp.day,
-                wind: weather.daily[i].wind_speed,
-                humidity: weather.daily[i].humidity
-            };
+    //     for (var i = 0; i < 5; i++) {
+    //         date = dayjs().add(i + 1, 'day').format("MM/DD/YYYY");
+    //         var fiveDayObj = {
+    //             date: date,
+    //             weather: weather.daily[i].weather[0].icon,
+    //             temp: weather.daily[i].temp.day,
+    //             wind: weather.daily[i].wind_speed,
+    //             humidity: weather.daily[i].humidity
+    //         };
 
-            fiveDayArr.push(fiveDayObj);
-        };
-        // console.log(fiveDayArr);
+    //         fiveDayArr.push(fiveDayObj);
+    //     };
+    //     // console.log(fiveDayArr);
        
 
-        //sending stored data to function that will print to screen
-        printFiveDay(fiveDayArr);
-        });
-    })
+    //     //sending stored data to function that will print to screen
+    //     printFiveDay(fiveDayArr);
+    //     });
+    // })
 
     .catch(function(error) {
         alert("Unable to connect to Weather Map");
