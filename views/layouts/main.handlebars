@@ -40,34 +40,38 @@
           </div>
         </div>
   </div>
-  {{/if}}
-  </nav>
-  </header>
-  <main class="columns">
-    <!-- TAG SEARCH BUTTONS -->
-    <div id="tag-btns" class="column is-one-quarter">
-      <h2>Show me posts with this tag:</h2>
-      <button id="food-tag-btn" class="tag-btn btn">Food and Beverage</button>
-      <button id="sports-tag-btn" class="tag-btn btn">Sports</button>
-      <button id="arts-tag-btn" class="tag-btn btn">Music and Entertainment</button>
-      <button id="edu-tag-btn" class="tag-btn btn">Museums and Education</button>
-      <button id="free-tag-btn" class="tag-btn btn">Free!</button>
-    </div>
-    <!-- WEATHER FORECAST -->
-    <div class="column">
-      <div id="weather-forecast">
-        <h2 id="five-forecast"></h2>
-        <div id="five-days"></div>
-      </div>
-    
-      {{{ body }}}
-    </div>
-    {{> login-modal}}
-    {{> sign-up-modal}}
-  </main>
-  <footer>
-    Thanks for visiting!
-  </footer>
+        {{/if}}
+      </nav>
+    </header>
+    <main class="columns">
+            <!-- TAG SEARCH BUTTONS -->
+            <div id="tag-btns" class="column is-one-quarter">
+              <h2>Show me posts with this tag:</h2>
+                <button id="food-tag-btn" class="tag-btn btn">Food and Beverage</button>
+                <button id="sports-tag-btn" class="tag-btn btn">Sports</button>
+                <button id="arts-tag-btn" class="tag-btn btn">Music and Entertainment</button>
+                <button id="edu-tag-btn" class="tag-btn btn">Museums and Education</button>
+                <button id="free-tag-btn" class="tag-btn btn">Free!</button>
+            </div>
+            <!-- WEATHER FORECAST -->
+            <div class="column">
+              <div id="weather-forecast">
+                  <h2 id="five-forecast"></h2>
+                  <div id="five-days"></div>
+              </div>
+              
+                <div id="main-body">
+                  {{{ body }}}
+                </div>
+
+            </div>
+            </div>
+            {{> login-modal}}
+            {{> sign-up-modal}}
+    </main>
+    <footer>
+      Thanks for visiting!
+    </footer>
   </div>
 
   <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
