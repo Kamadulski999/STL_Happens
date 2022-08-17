@@ -2,8 +2,8 @@ const { Post } = require('../models');
 
 const postdata = [
   {
-    title: 'Free hotogs at the park today',
-    post_content: 'b;ah blah blah go to the arch',
+    title: 'Free hotdogs at the park today',
+    post_content: 'blah blah blah go to the arch',
     user_id: 10
   },
   {

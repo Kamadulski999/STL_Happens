@@ -1,10 +1,9 @@
 {{> post-info post}}
-  <ol>
-    <li>
-      {{> post-info post}}
-      <a href="/dashboard/edit/{{post.post_url}}" class="edit-link">Edit post</a>
-    </li>
-  </ol>
+
+
+
+{{> comments post.comments}}
+
 {{#if loggedIn}}
 <form class="comment-form">
   <div>
@@ -17,10 +16,10 @@
 </form>
 {{/if}}
 
-{{> comments post.comments}}
+{{!-- {{#if user_id === req.session.user_id}}
+<p>HEYYEYEYYEYEYYEYYEYEYEYEYEY</p>
+{{/if}} --}}
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
-<script src="/javascript/edit-post.js"></script>
-<script src="/javascript/delete-post.js"></script>
 {{/if}}
