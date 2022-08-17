@@ -1,12 +1,15 @@
 <div class="post">
+
   <div class="title">
     <a href="/post/{{id}}">{{title}}</a>
   </div>
-  
+
   <div class="post-content">
-   <p>{{post_content}}</p> 
+    <p>{{post_content}}</p> 
   </div>
-  <div >
+
+  <div class="comment-info">
     <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
   </div>
+
 </div>
