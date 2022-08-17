@@ -64,6 +64,12 @@ label{
     margin-bottom: 5px;
 }
 
+.post-text{
+    min-width: 40%;
+    min-height: 100px;
+    margin-bottom: 5px;
+}
+
 .post-list {
     margin: 0;
     padding: 0;
@@ -79,19 +85,20 @@ label{
 }
 
 textarea {
-    min-width: 40%;
-    min-height: 100px;
+    min-width: 40%!important;
+    min-height: 100px!important;
 }  
 
 textarea, input {
-    padding: .5%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    padding: .5%!important;
+    border-radius: 5px!important;
+    border: 1px solid #ccc!important;
+    min-width: 40%!important;
 }
   
 textarea:focus, input:focus {
-    outline: none;
-    border: 1px solid #3486eb;
+    outline: none!important;
+    border: 1px solid #3486eb!important;
 }
 
 .wrapper {
@@ -155,6 +162,22 @@ textarea:focus, input:focus {
 .edit-post{
     padding: 5px;
     margin: 5px;
+}
+
+.edit-post-fields{
+    display: flex;
+    flex-direction: column;
+}
+
+#edit-title{
+    min-width: 35%;
+    margin-bottom: 5px;
+}
+
+#edit-content{
+    min-width: 40%;
+    min-height: 100px;
+    margin-bottom: 5px;
 }
 
 .meta{
