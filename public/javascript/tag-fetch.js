@@ -1,9 +1,9 @@
 async function editFormHandler(event) {
     event.preventDefault();
 
-    const post_content = document.querySelector('textarea[name="post-content"]').value.trim();
     const title = document.querySelector('input[name="post-title"]').value.trim();
-    const created_at = document.querySelector('textarea[name="created_at"]').value.trim();
+    const post_content = document.querySelector('input[name="post-content"]').value.trim();
+    const created_at = document.querySelector('input[name="created_at"]').value.trim();
     const tag = document.querySelector('input[name="tag"]').value.trim();
 
   
@@ -31,5 +31,5 @@ async function editFormHandler(event) {
     }
   }
   
-  document.querySelector('.tag').addEventListener('click', editFormHandler);
+  document.querySelector('.tag').addEventListener('submit', editFormHandler);
   
