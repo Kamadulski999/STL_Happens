@@ -125,6 +125,8 @@ textarea:focus, input:focus {
     color: var(--color-four);
     font-size: 2vh;
     margin: 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .post-content{
@@ -149,6 +151,12 @@ textarea:focus, input:focus {
     margin: 5px;
     padding: 3px 3px 10px 3px;
 }
+
+.edit-post{
+    padding: 5px;
+    margin: 5px;
+}
+
 .meta{
     color: var(--color-four);
 }
