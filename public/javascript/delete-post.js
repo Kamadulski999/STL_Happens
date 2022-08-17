@@ -1,3 +1,5 @@
+// const withAuth = require('../utils/auth');
+
 async function deleteFormHandler(event) {
   event.preventDefault();
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
+
 <body>
   <div class="wrapper">
     <header class="navbar is-white">
@@ -21,62 +23,62 @@
       <nav id="navMenu" class="navbar-menu">
         {{#if loggedIn}}
         <div class="navbar-end">
-            <div class="navbar-item">
-              <button id="make-post" class="btn">make post</button>
-            </div>
-            <div class="navbar-item">
-              <button id="logout" class="btn">logout</button>
-            </div>
+          <div class="navbar-item">
+            <button id="make-post" class="btn">make post</button>
           </div>
+          <div class="navbar-item">
+            <button id="logout" class="btn">logout</button>
+          </div>
+        </div>
         {{else}}
         <div class="navbar-end">
-            <div class="navbar-item">
-              <button id="login" class="btn">login</button>
-            </div>
-            <div class="navbar-item">
-              <button id="sign-up" class="btn">sign up</button>
-            </div>
+          <div class="navbar-item">
+            <button id="login" class="btn">login</button>
           </div>
-        
+          <div class="navbar-item">
+            <button id="sign-up" class="btn">sign up</button>
+          </div>
+        </div>
+
         {{/if}}
       </nav>
     </header>
     <main class="columns">
-            <!-- TAG SEARCH BUTTONS -->
-            <div id="tag-btns" class="column is-one-quarter">
-              <h2>Show me posts with this tag:</h2>
-                <button id="Food-tag-btn" class="tag btn">Food and Beverage</button>
-                <button id="Sprt-tag-btn" class="tag btn">Sports</button>
-                <button id="Msc-tag-btn" class="tag btn">Music and Entertainment</button>
-                <button id="Mseum-tag-btn" class="tag btn">Museums and Education</button>
-                <button id="Free-tag-btn" class="tag btn">Free!</button>
-            </div>
-            <!-- WEATHER FORECAST -->
-            <div class="column">
-              <div id="weather-forecast">
-                  <h2 id="five-forecast"></h2>
-                  <div id="five-days"></div>
-              </div>
-              
-                <div id="main-body">
-                  {{{ body }}}
-                </div>
+      <!-- TAG SEARCH BUTTONS -->
+      <div id="tag-btns" class="column is-one-quarter">
+        <h2>Show me posts with this tag:</h2>
+        <button id="food-tag-btn" class="tag-btn btn">Food and Beverage</button>
+        <button id="sports-tag-btn" class="tag-btn btn">Sports</button>
+        <button id="arts-tag-btn" class="tag-btn btn">Music and Entertainment</button>
+        <button id="edu-tag-btn" class="tag-btn btn">Museums and Education</button>
+        <button id="free-tag-btn" class="tag-btn btn">Free!</button>
+      </div>
+      <!-- WEATHER FORECAST -->
+      <div class="column">
+        <div id="weather-forecast">
+          <h2 id="five-forecast"></h2>
+          <div id="five-days"></div>
+        </div>
 
-            </div>
-            {{> login-modal}}
-            {{> sign-up-modal}}
+        <div id="main-body">
+          {{{ body }}}
+        </div>
+
+      </div>
+      {{> login-modal}}
+      {{> sign-up-modal}}
     </main>
     <footer>
       Thanks for visiting!
     </footer>
   </div>
-</div>
+  </div>
   <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
   <script src="/javascript/login.js"></script>
   <script src="/javascript/weather.js"></script>
   <script src="/javascript/navbar.js"></script>
- 
-    
+
+
 
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
@@ -85,4 +87,5 @@
   <script src="/javascript/modals.js"></script>
   {{/if}}
 </body>
+
 </html>

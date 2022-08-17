@@ -1,10 +1,8 @@
-async function newFormHandler(event) {
+async function makePost(event) {
     event.preventDefault();
     document.location.replace('/dashboard');
 
-  }
+  };
+  
 
-  
-  
-  document.querySelector('#make-post').addEventListener('click', newFormHandler);
-  
+  document.querySelector('#make-post').addEventListener('click', makePost);  
