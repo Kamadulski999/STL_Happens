@@ -4,103 +4,123 @@ const postdata = [
   {
     title: 'Free hotogs at the park today',
     post_content: 'b;ah blah blah go to the arch',
-    user_id: 10
+    user_id: 10,
+    tag: Free
   },
   {
     title: 'City museum open and stuff',
     post_content: 'be super cool at the city museum',
-    user_id: 8
+    user_id: 8,
+    tag: Mseum
   },
   {
     title: 'Cardinals mascot visiting our company.',
     post_content: 'Fredbird is always doing things',
-    user_id: 1
+    user_id: 1,
+    tag: Sprt
   },
   {
     title: 'LION KING AT THE MUNY',
     post_content: 'tickets are expensive :(',
-    user_id: 4
+    user_id: 4,
+    tag: Msc
   },
   {
-    title: 'Pellentesque eget nunc.',
-    post_content: 'http://google.ca/nam/nulla/integer.aspx',
-    user_id: 7
+    title: 'Salt and smoke',
+    post_content: 'there is food here',
+    user_id: 7,
+    tag: Food
   },
   {
-    title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-    post_content: 'https://stanford.edu/consequat.png',
-    user_id: 4
+    title: 'St louis Blues',
+    post_content: 'Standley Cup winning professoinal hockey team',
+    user_id: 4,
+    tag: Sprt
   },
   {
-    title: 'In hac habitasse platea dictumst.',
-    post_content: 'http://edublogs.org/non/ligula/pellentesque.js',
-    user_id: 1
+    title: 'broadway oyster bar',
+    post_content: 'there might be oysters here',
+    user_id: 1,
+    tag: Food
   },
   {
-    title: 'Morbi non quam nec dui luctus rutrum.',
-    post_content: 'http://ucla.edu/consequat/nulla.html',
-    user_id: 1
+    title: 'St Louis Cardinals',
+    post_content: 'Multi world series winning professional baseball team',
+    user_id: 1,
+    tag: Sprt
   },
   {
-    title: 'Duis ac nibh.',
-    post_content: 'http://theguardian.com/dui/vel/nisl/duis/ac/nibh.aspx',
-    user_id: 9
+    title: 'Joe\'s cafe',
+    post_content: 'Jazz and blues music to swoon to',
+    user_id: 9,
+    tag: Msc
   },
   {
-    title: 'Curabitur at ipsum ac tellus semper interdum.',
-    post_content: 'https://reverbnation.com/ligula/sit.jpg',
-    user_id: 5
+    title: 'St louis fine arts museum',
+    post_content: 'this place has halls and halls adorn with art from some of the greats',
+    user_id: 5,
+    tag: Mseum
   },
   {
-    title: 'In hac habitasse platea dictumst.',
-    post_content: 'http://china.com.cn/lectus/vestibulum.json',
-    user_id: 3
+    title: 'The Grove, St Louis',
+    post_content: 'this is an epic music venue that is a must see',
+    user_id: 3,
+    tag: Msc
   },
   {
-    title: 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.',
-    post_content: 'http://networksolutions.com/nam/ultrices/libero/non/mattis/pulvinar.json',
-    user_id: 10
+    title: '360 st louis',
+    post_content: 'lounge, tapas and cocktails',
+    user_id: 10,
+    tag: Food
   },
   {
-    title: 'Donec dapibus.',
-    post_content: 'https://instagram.com/ac/neque/duis/bibendum/morbi/non.xml',
-    user_id: 8
+    title: 'St Louis Zoo',
+    post_content: 'this is a world renown zoo that is considered a st louis treasure',
+    user_id: 8,
+    tag: Free
   },
   {
-    title: 'Nulla tellus.',
-    post_content: 'https://lycos.com/natoque/penatibus/et.html',
-    user_id: 3
+    title: 'thaxton Speakeasy',
+    post_content: 'a venue to see and be seen',
+    user_id: 3,
+    tag: Msc
   },
   {
-    title: 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.',
-    post_content: 'https://gmpg.org/lorem.jpg',
-    user_id: 3
+    title: 'St Louis Cit FC',
+    post_content: 'Brand new professoinal soccer team',
+    user_id: 3,
+    tag: Food
   },
   {
     title:
-      'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.',
-    post_content: 'https://paginegialle.it/mattis/egestas.jsp',
-    user_id: 7
+      'Stacked STL',
+    post_content: 'burgers, beer and cocktails yo',
+    user_id: 7,
+    tag: Food
   },
   {
-    title: 'In hac habitasse platea dictumst.',
-    post_content: 'http://wikia.com/turpis/eget.jpg',
-    user_id: 6
+    title: 'Shaw Park',
+    post_content: 'better known as the St Louis Botanical garden',
+    user_id: 6,
+    tag: Free
   },
   {
-    title: 'Etiam justo.',
-    post_content: 'https://shareasale.com/quis.json',
-    user_id: 4
+    title: 'National Blues Museum',
+    post_content: 'this is a must see for any blues music lover',
+    user_id: 4,
+    tag: Mseum
   },
   {
-    title: 'Nulla ut erat id mauris vulputate elementum.',
-    post_content: 'http://java.com/diam/neque/vestibulum/eget/vulputate/ut/ultrices.png',
-    user_id: 6
+    title: 'Lafayette Park',
+    post_content: 'A lovely park to take family and walk your pets',
+    user_id: 6,
+    tag: Free
   },
   {
-    title: 'Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.',
-    post_content: 'https://java.com/at/nibh/in.png',
-    user_id: 7
+    title: 'The national museum of transportation',
+    post_content: 'this place is super cool, especially the locamotives',
+    user_id: 7,
+    tag: Free
   }
 ];
 
