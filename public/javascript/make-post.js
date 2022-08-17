@@ -3,6 +3,8 @@ async function newFormHandler(event) {
     document.location.replace('/dashboard');
 
   }
+
+  
   
   document.querySelector('#make-post').addEventListener('click', newFormHandler);
   
