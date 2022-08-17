@@ -20,11 +20,7 @@ Post.init(
     },
     post_content: {
       type: DataTypes.STRING,
-<<<<<<< HEAD
       allowNull: false,
-=======
-      allowNull: false
->>>>>>> feature/debugging
     },
     user_id: {
       type: DataTypes.INTEGER,
