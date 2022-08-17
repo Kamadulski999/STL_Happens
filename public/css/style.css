@@ -35,17 +35,33 @@ button {
     background-color: var(--color-one);
     color: var(--color-three);
     border-radius: 7px;
-
 }
 
 h1 {
     font-weight: bold!important;
     font-size: 5vh!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
   
 button:hover {
     background-color: var(--color-four);
     color: var(--color-three);
+}
+
+label{
+    font-size: 2.5vh;
+    color: var(--color-one);
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#post-text {
+    min-width: 40%;
+    min-height: 100px;
+    margin-bottom: 5px;
 }
 
 .post-list {
@@ -93,22 +109,28 @@ textarea:focus, input:focus {
   
 .post {
     margin-bottom: 2%;
+    background-color: var(--color-three);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
 }
 
 .title {
     font-size: 10vh;
-    margin: 5x;
+    margin: 5px!important;
     padding: 0;
 }
 
 .comment-info{
     color: var(--color-four);
     font-size: 2vh;
+    margin: 5px;
 }
 
 .post-content{
     color: var(--color-one);
     font-size: 2vh;
+    margin: 5px;
 }
 
 .comments{
@@ -190,7 +212,6 @@ main {
     background-color: var(--color-one);
     opacity: 0.97;
     border: solid 2px var(--color-three);
-
 }
 
 #forecast {
@@ -201,5 +222,4 @@ footer{
     background-color: var(--color-one);
     color: var(--color-three);
     font-weight: bold;
-
 }
