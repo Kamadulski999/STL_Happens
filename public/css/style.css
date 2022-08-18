@@ -64,12 +64,6 @@ label{
     margin-bottom: 5px;
 }
 
-.post-text{
-    min-width: 40%;
-    min-height: 100px;
-    margin-bottom: 5px;
-}
-
 .post-list {
     margin: 0;
     padding: 0;
@@ -85,20 +79,19 @@ label{
 }
 
 textarea {
-    min-width: 40%!important;
-    min-height: 100px!important;
+    min-width: 40%;
+    min-height: 100px;
 }  
 
 textarea, input {
-    padding: .5%!important;
-    border-radius: 5px!important;
-    border: 1px solid #ccc!important;
-    min-width: 40%!important;
+    padding: .5%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
   
 textarea:focus, input:focus {
-    outline: none!important;
-    border: 1px solid #3486eb!important;
+    outline: none;
+    border: 1px solid #3486eb;
 }
 
 .wrapper {
@@ -164,22 +157,6 @@ textarea:focus, input:focus {
     margin: 5px;
 }
 
-.edit-post-fields{
-    display: flex;
-    flex-direction: column;
-}
-
-#edit-title{
-    min-width: 35%;
-    margin-bottom: 5px;
-}
-
-#edit-content{
-    min-width: 40%;
-    min-height: 100px;
-    margin-bottom: 5px;
-}
-
 .meta{
     color: var(--color-four);
 }
@@ -192,7 +169,6 @@ a.tag-btn {
     padding: 5px;
     margin: 8px;
 }
-
 main {
     flex: 1;
     padding: 2% 4%;
@@ -257,4 +233,15 @@ footer{
     background-color: var(--color-one);
     color: var(--color-three);
     font-weight: bold;
+}
+#map-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    height: 50vh;
+    width: 50vw;
 }

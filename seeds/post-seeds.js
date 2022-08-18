@@ -89,7 +89,7 @@ const postdata = [
     title: 'St Louis Cit FC',
     post_content: 'Brand new professoinal soccer team',
     user_id: 3,
-    tag: 'Food'
+    tag: 'Sprt'
   },
   {
     title:
