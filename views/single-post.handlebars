@@ -1,0 +1,25 @@
+{{> post-info post}}
+
+
+
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+    <input type="hidden" id="post_id" name="post_id" value="{{ post.id }}" />
+  <div>
+    <button type="submit">add comment</button>
+  </div>
+</form>
+{{/if}}
+
+{{!-- {{#if user_id === req.session.user_id}}
+<p>HEYYEYEYYEYEYYEYYEYEYEYEYEY</p>
+{{/if}} --}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}

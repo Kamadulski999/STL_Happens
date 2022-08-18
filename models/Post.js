@@ -18,12 +18,9 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-    post_url: {
+    post_content: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        isURL: true
-      }
     },
     user_id: {
       type: DataTypes.INTEGER,
@@ -31,6 +28,10 @@ Post.init(
         model: 'user',
         key: 'id'
       }
+    },
+    tag: {
+      type: DataTypes.STRING,
+      allowNull: true
     }
   },
   {
