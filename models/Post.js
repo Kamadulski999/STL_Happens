@@ -20,7 +20,7 @@ Post.init(
     },
     post_content: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     user_id: {
       type: DataTypes.INTEGER,
@@ -28,6 +28,10 @@ Post.init(
         model: 'user',
         key: 'id'
       }
+    },
+    tag: {
+      type: DataTypes.STRING,
+      allowNull: true
     }
   },
   {

@@ -1,4 +1,3 @@
-
 function initMap() {
     let mapOptions = {
         center: { lat: 38.6251, lng: -90.201 },
@@ -329,7 +328,4 @@ function initMap() {
         }
     });
 }
-
-
-
 
