@@ -31,7 +31,7 @@ Post.init(
     },
     tag: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     }
   },
   {

@@ -184,9 +184,13 @@ textarea:focus, input:focus {
     color: var(--color-four);
 }
 
-.tag-btn{
+a.tag-btn {
+    background-color: var(--color-one);
+    color: var(--color-three)!important;
+    text-align: center;
+    border-radius: 7px;
     padding: 5px;
-    margin: 5px;
+    margin: 8px;
 }
 
 main {
