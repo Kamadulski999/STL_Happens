@@ -231,3 +231,14 @@ footer{
     color: var(--color-three);
     font-weight: bold;
 }
+#map-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    height: 50vh;
+    width: 50vw;
+}
