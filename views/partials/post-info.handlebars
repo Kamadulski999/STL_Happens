@@ -1,3 +1,4 @@
+{{#if loggedIn}}
 <div class="post">
 
   <div class="title">
@@ -13,8 +14,20 @@
   
     <a href="/dashboard/edit/{{id}}" class="edit-link">Edit post</a>
     </div>
-
-
-
-
 </div>
+{{else}}
+<div class="post">
+
+  <div class="title">
+    <a href="/post/{{id}}">{{title}}</a>
+  </div>
+
+  <div class="post-content">
+    <p>{{post_content}}</p> 
+  </div>
+
+  <div class="comment-info">
+    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>  
+    </div>
+</div>
+ {{/if}}
