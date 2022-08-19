@@ -45,7 +45,8 @@ async function signupFormHandler(event) {
       });
   
       if (response.ok) {
-        document.location.replace('/');
+        console.log(response)
+        window.location.assign('/');
       } else {
         alert(response.statusText);
       }
