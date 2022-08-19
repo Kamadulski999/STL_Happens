@@ -58,6 +58,10 @@ label{
     flex-direction: column;
 }
 
+.modal-label{
+    color: var(--color-three);
+}
+
 #post-text {
     min-width: 40%;
     min-height: 100px;
