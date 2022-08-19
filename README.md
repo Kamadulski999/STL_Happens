@@ -1,4 +1,4 @@
-# ##  <h1>STL Happens MVC App</h1><h2> License </h2>
+<h1>STL Happens MVC App</h1><h2> License </h2>
 ![license](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)[  BSD](https://opensource.org/licenses/BSD-3-Clause)<h2> Table of Contents </h2> 
 - [License](#license) 
 - [Description](#description) 
